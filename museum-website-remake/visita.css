@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.sec1-visita {
+    height: 100vh;
+    font-family: "Comfortaa", sans-serif;
+    background-color: #ecedef;
+}
+
+.container-visita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 5px;
+}
+
+.container-visita h1 {
+    font-size: 60px;
+    color: #242424;
+    font-family: "Kanit", sans-serif;
+}
+
+.container-visita p {
+    color: #808080;
+    font-size: 30px;
+}
+
+.sec2-visita {
+    height: auto;
+}
+
+.paragraphs {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.paragraphs h2 {
+    font-size: 25px;
+}
+
+.title-visita {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.title-visita h1 {
+    border: 3px solid #363636;
+    padding: 20px 40px 20px 40px;
+    border-radius: 50px;
+    color: #363636;
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to right, #91eae477, #86a8e77a, #7f7fd585);
+    background: linear-gradient(to right, #91eae483, #86a8e793, #7f7fd5a6);
+}
+
+.decoration-visita {
+    text-decoration: underline;
+}
+
+.wrapper-visita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 22 px;
+}
+
+.p-visita {
+    overflow: hidden;
+}
+
+.disclaimer-prezzi {
+    display: flex;
+    justify-content: center;
+    color: #484848;
+}
+
+.disclaimer-prezzi a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+
+.price {
+    font-size: 30px;
+    padding: 0 0 0 10px;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #535353;
+    user-select: none;
+}
+
+.subtitle:hover,
+.subtitle.active {
+    cursor: pointer;
+    color: #0b65b9;
+    transition: ease-in .4s;
+}
+
+.details-visita {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+    align-items: center;
+    gap: 5px;
+    border: 1.8px solid #363636;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+details>summary {
+    list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+.icon-visita {
+    width: 15px;
+    margin-left: 5px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*! <>Code from another source</> */
+
+gmpx-store-locator {
+    width: 200vh;
+    height: 60vh;
+    border-radius: 20px;
+    --gmpx-color-surface: #fff;
+    --gmpx-color-on-surface: #212121;
+    --gmpx-color-on-surface-variant: #757575;
+    --gmpx-color-primary: #1967d2;
+    --gmpx-color-outline: #e0e0e0;
+    --gmpx-fixed-panel-width-row-layout: 28.5em;
+    --gmpx-fixed-panel-height-column-layout: 65%;
+    --gmpx-font-family-base: "Roboto", sans-serif;
+    --gmpx-font-family-headings: "Roboto", sans-serif;
+    --gmpx-font-size-base: 0.875rem;
+    --gmpx-hours-color-open: #188038;
+    --gmpx-hours-color-closed: #d50000;
+    --gmpx-rating-color: #ffb300;
+    --gmpx-rating-color-empty: #e0e0e0;
+}
