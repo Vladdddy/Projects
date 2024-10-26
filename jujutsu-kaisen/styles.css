@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: JujutsuKaisen;
+    src: url(Jujutsu\ Kaisen.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+/*? BACKGROUND -----------------------------------------------*/
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #343434;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 22s linear infinite;
+}
+
+.background li:nth-child(0) {
+    left: 62%;
+    width: 114px;
+    height: 114px;
+    bottom: -114px;
+    animation-delay: 1s;
+}
+
+.background li:nth-child(1) {
+    left: 68%;
+    width: 89px;
+    height: 89px;
+    bottom: -89px;
+    animation-delay: 2s;
+}
+
+.background li:nth-child(2) {
+    left: 25%;
+    width: 161px;
+    height: 161px;
+    bottom: -161px;
+    animation-delay: 1s;
+}
+
+.background li:nth-child(3) {
+    left: 34%;
+    width: 121px;
+    height: 121px;
+    bottom: -121px;
+    animation-delay: 7s;
+}
+
+.background li:nth-child(4) {
+    left: 1%;
+    width: 144px;
+    height: 144px;
+    bottom: -144px;
+    animation-delay: 18s;
+}
+
+.background li:nth-child(5) {
+    left: 77%;
+    width: 106px;
+    height: 106px;
+    bottom: -106px;
+    animation-delay: 10s;
+}
+
+.background li:nth-child(6) {
+    left: 38%;
+    width: 109px;
+    height: 109px;
+    bottom: -109px;
+    animation-delay: 9s;
+}
+
+.background li:nth-child(7) {
+    left: 58%;
+    width: 195px;
+    height: 195px;
+    bottom: -195px;
+    animation-delay: 9s;
+}
+
+.background li:nth-child(8) {
+    left: 26%;
+    width: 199px;
+    height: 199px;
+    bottom: -199px;
+    animation-delay: 11s;
+}
+
+.background li:nth-child(9) {
+    left: 39%;
+    width: 109px;
+    height: 109px;
+    bottom: -109px;
+    animation-delay: 34s;
+}
+
+.background li:nth-child(10) {
+    left: 64%;
+    width: 124px;
+    height: 124px;
+    bottom: -124px;
+    animation-delay: 45s;
+}
+
+.background li:nth-child(11) {
+    left: 17%;
+    width: 175px;
+    height: 175px;
+    bottom: -175px;
+    animation-delay: 44s;
+}
+
+.background li:nth-child(12) {
+    left: 87%;
+    width: 113px;
+    height: 113px;
+    bottom: -113px;
+    animation-delay: 32s;
+}
+
+.background li:nth-child(13) {
+    left: 6%;
+    width: 169px;
+    height: 169px;
+    bottom: -169px;
+    animation-delay: 11s;
+}
+
+.background li:nth-child(14) {
+    left: 12%;
+    width: 180px;
+    height: 180px;
+    bottom: -180px;
+    animation-delay: 9s;
+}
+
+.background li:nth-child(15) {
+    left: 67%;
+    width: 131px;
+    height: 131px;
+    bottom: -131px;
+    animation-delay: 61s;
+}
+
+/*? NAVBAR -----------------------------------------------*/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 10px 10px 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #f1f1f1;
+}
+
+.dropbtn {
+    background-color: #c60e0e;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 30px;
+    color: white;
+    padding: 8px 14px 8px 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #c60e0e;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: #c60e0e;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: #f1f1f1;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/*? SEC1 -----------------------------------------------*/
+.sec1 {
+    height: auto;
+}
+
+.title {
+    font-family: JujutsuKaisen;
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    font-size: 60px;
+    margin: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 270px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: #f1f1f1;
+    font-size: 18px;
+    background: linear-gradient(90deg, #df6262, #f1f1f1, #df6262);
+    background-clip: text;
+    color: transparent;
+    margin: 40px 20px 20px 20px;
+    gap: 5px;
+}
+
+/*? SEC2 -----------------------------------------------*/
+.sec2 {
+    height: auto;
+    background-color: #100e0e44;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rowdies", sans-serif;
+    color: #f1f1f1;
+    font-size: 30px;
+    margin: 20px 40px 20px 40px;
+    border-left: 20px solid #c60e0e;
+    border-bottom: 3px solid #c60e0e;
+}
+
+.header p {
+    padding: 5px;
+}
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 15px 30px 15px;
+    gap: 20px;
+    padding: 10px 50px 10px 50px;
+}
+
+.title-container {
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: JujutsuKaisen;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100px;
+}
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
