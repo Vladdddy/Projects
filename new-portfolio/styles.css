@@ -25,9 +25,15 @@ html {
 }
 
 :root {
+    /* colors */
     --text: #FFFFFF;
     --navbar-background: #00000020;
     --user-selection: #9346ff73;
+    --primary: #8533F8;
+
+    /* font-size */
+    --section-title: 30px;
+    --section-counter: 26px;
 }
 
 * {
@@ -77,6 +83,10 @@ nav:hover .navbar-background {
     animation: navbar-background 0.2s linear;
 }
 
+nav:hover .profile-image {
+    box-shadow: 0 0 30px var(--primary);
+}
+
 .navbar-background {
     position: fixed;
     width: 30vh;
@@ -96,6 +106,7 @@ nav:hover .navbar-background {
 .profile-image {
     width: 40px;
     border-radius: 100%;
+    transition: all 0.2s linear;
 }
 
 .icons-container {
@@ -125,7 +136,7 @@ nav:hover .navbar-background {
 
 /*-------------- Hero Section --------------*/
 .hero {
-    height: auto;
+    height: 100vh;
 }
 
 .hero h1 {
@@ -134,7 +145,7 @@ nav:hover .navbar-background {
     justify-content: center;
     color: var(--text);
     font-size: 50px;
-    margin-top: 40vh;
+    padding-top: 40vh;
 }
 
 .hero h3 {
@@ -167,19 +178,115 @@ nav:hover .navbar-background {
     color: var(--text);
 }
 
-/*-------------- Hero Section --------------*/
+/*-------------- About me Section --------------*/
 .about-me-section {
     height: 100vh;
 }
 
+.page-layout {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 30vh 60vh;
+    gap: 20px;
+}
 
+.section-title {
+    display: flex;
+    align-items: baseline;
+    font-size: var(--section-title);
+    color: var(--text);
+    gap: 10px;
+}
 
+.section-counter {
+    font-size: var(--section-counter);
+    color: var(--primary);
+    font-weight: 600;
+}
 
+.paragraph-about-me {
+    width: 800px;
+    font-weight: 300;
+    color: var(--text);
+    font-size: var(--section-counter);
+}
 
+.about-me-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.about-me-icons a {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.2s linear;
+}
 
+.about-me-icons a:hover {
+    transform: scale(1.1);
+}
 
+/*-------------- Projects Section --------------*/
+.projects-section {
+    height: 100vh;
+}
 
+.page-layout {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 30vh 60vh;
+    gap: 20px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.project {
+    position: relative;
+}
+
+.project h1 {
+    color: var(--text);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* TODO Fix this bug */
+.project::before,
+.project::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.project img {
+    width: 280px;
+    height: 460px;
+    border-radius: 50px;
+    box-shadow: 8px 8px 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+.prj {
+    padding: 10vh 60vh;
+}
 
 
 
