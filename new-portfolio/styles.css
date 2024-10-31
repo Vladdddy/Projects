@@ -73,6 +73,7 @@ nav a:hover {
 
 nav:hover .navbar-background {
     background-color: var(--navbar-background);
+    box-shadow: 10px 0 15px var(--navbar-background);
     animation: navbar-background 0.2s linear;
 }
 
@@ -124,7 +125,7 @@ nav:hover .navbar-background {
 
 /*-------------- Hero Section --------------*/
 .hero {
-    height: 100vh;
+    height: auto;
 }
 
 .hero h1 {
@@ -165,6 +166,48 @@ nav:hover .navbar-background {
     font-size: 10px;
     color: var(--text);
 }
+
+/*-------------- Hero Section --------------*/
+.about-me-section {
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*!-------------- Animations --------------!*/
 @keyframes navbar-slide-in {
