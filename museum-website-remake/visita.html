@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="visita.css">
+    <script src="script.js"></script>
+    <title>Museo MA*GA - Visita</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="mostre.html">MOSTRE</a>
+        <a href="">ATTIVITÁ</a>
+        <a href="">COLLEZIONE</a>
+        <a href="visita.html">VISITA</a>
+        <a href="">SOSTIENI</a>
+    </div>
+
+    <section class="sec1-visita">
+        <div class="container-visita">
+            <h1>INDIRIZZO</h1>
+            <p>Via Egidio de Magri 1, 21013 Gallarate (VA)</p>
+        </div>
+
+        <div class="map">
+            <gmpx-api-loader key="AIzaSyDuQqFgn5mduggHNhjIe83d1JoUrIXJs5o"
+                solution-channel="GMP_QB_locatorplus_v10_cABD"></gmpx-api-loader>
+            <gmpx-store-locator map-id="DEMO_MAP_ID"></gmpx-store-locator>
+        </div>
+
+        <script type="module">
+            document.addEventListener('DOMContentLoaded', async () => {
+                await customElements.whenDefined('gmpx-store-locator');
+                const locator = document.querySelector('gmpx-store-locator');
+                locator.configureFromQuickBuilder(CONFIGURATION);
+            });
+        </script>
+
+        <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
+    </section>
+
+    <section class="sec2-visita">
+        <div id="cont1_visita" class="cont-visita art-container">
+            <div class="title-visita">
+                <h1>COME RAGGIUNGERCI</h1>
+            </div>
+            <div class="paragraphs">
+                <div class="p-visita">
+                    <h2>IN TRENO</h2>
+                    <p>Trenord
+                        S5 Varese-Milano-Treviglio <br>
+                        Milano-Gallarate-Varese-Porto Ceresio <br>
+                        Milano-Arona-Domodossola <br>
+                        Milano-Gallarate-Luino <br>
+                        <br>
+                    <h2>TILO</h2>
+                    S50 Malpensa-Varese-Lugano-Bellinzona-Biasca <br>
+                    S30 Cadenazzo-Luino-Gallarate
+                    </p>
+                </div>
+
+                <div class="p-visita">
+                    <h2>IN AUTO</h2>
+                    <p>Da Milano e Varese:
+                        <br>
+                        Autostrada dei Laghi, uscita Gallarate
+                    </p>
+                </div>
+
+                <div class="p-visita">
+                    <h2>IN AUTOBUS</h2>
+                    <p>Collegamenti bus per Gallarate sulla linea <br>
+                        Gallarate-Malpensa-Castelnovate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="cont2_visita" class="cont-visita art-container">
+            <div class="title-visita">
+                <h1>ORARI</h1>
+            </div>
+            <div class="paragraphs">
+                <div class="p-visita">
+                    <h2>CHIUSURA ESTIVA 2024</h2>
+                    <p>Il Museo resterà chiuso dal: <br>
+                        <span class="decoration-visita">10 al 23 agosto</span> <br>
+                        e riaprirà al pubblico il: <br>
+                        <span class="decoration-visita">sabato 24 agosto.</span>
+                        <br>
+                        La Biblioteca L. Majno riaprirà <span class="decoration-visita">martedì 27 agosto.</span>
+                    </p>
+                </div>
+
+                <div class="p-visita">
+                    <h2>Orari:</h2>
+                    <p>Martedì-Mercoledì-Giovedì-Venerdì: <br>
+                        <span class="decoration-visita">10.00-18.00</span> <br>
+                        Sabato-Domenica: <br>
+                        <span class="decoration-visita">11.00-19.00</span> <br>
+                        Lunedì chiuso
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="cont3_visita" class="cont-visita art-container">
+            <div class="title-visita">
+                <h1>PREZZI</h1>
+            </div>
+            <div class="paragraphs wrapper-visita">
+                <div class="p-visita">
+                    <p>Biglietto Intero: <span class="price">€ 7,00</span></p>
+                </div>
+
+                <p>Biglietto Ridotto: <span class="price">€ 5,00</span></p>
+                <div class="p-visita">
+                    <details class="details-details-visita">
+                        <summary class="title-mostre subtitle" onclick="toggleActiveClass(this)">
+                            A chi è riservato?
+                            <img class="i icon-visita" src="icons/arrowdown_blue.png" alt="">
+                        </summary>
+                        <div class="details-visita">
+                            <p>- under 26 anni</p>
+                            <p>- over 70 anni</p>
+                            <p>- residenti a Gallarate</p>
+                            <p>- docenti</p>
+                            <p>- soci FAI e Touring Club</p>
+                            <p>- soci CAI Lombardia</p>
+                            <p>- soci Amici Museo Bodini</p>
+                            <p>- tesserati Italia Nostra</p>
+                            <p>- Ordine degli Architetti Varese</p>
+                            <p>- dipendenti Ricola</p>
+                            <p>- dipendenti Saporiti Italia</p>
+                            <p>- dipendenti Missoni S.p.A.</p>
+                            <p>- dipendenti Sea</p>
+                            <p>- dipendenti Lamberti S.p.A.</p>
+                            <p>- dipendenti Merlo Grup</p>
+                            <p>- dipendenti CRAL Whirlpool Area Varese</p>
+                            <p>- dipendenti Camal - Le vie del cotone</p>
+                            <p>- dipendenti Grassi S.p.A.</p>
+                            <p>- dipendenti Camera di Commercio Varese</p>
+                            <p>- dipendenti aziende associate a Confindustria Varese</p>
+                        </div>
+                    </details>
+                </div>
+
+                <div class=" p-visita">
+                    <p>Biglietto Ridotto possessori Carta Giovani Nazionale: <span class="price">€ 4,00</span>
+                    </p>
+                </div>
+
+                <p>Biglietto Gratuito: <span class="price">FREE</span></p>
+                <div class="p-visita">
+                    <details>
+                        <summary class="title-mostre subtitle" onclick="toggleActiveClass(this)">
+                            A chi è riservato?
+                            <img class="i icon-visita" src="icons/arrowdown_blue.png" alt="">
+                        </summary>
+                        <div class="details-visita">
+                            <p>- under 26 anni</p>
+                            <p>- under 11 anni</p>
+                            <p>- persone diversamente abili con accompagnatore</p>
+                            <p>- soci ICOM</p>
+                            <p>- AMICI del MA*GA</p>
+                            <p>- AMACI</p>
+                            <p>- MART Membership</p>
+                            <p>- Club GAMeC</p>
+                            <p>- abbonamento Musei Lombardia Valle d'Aosta</p>
+                            <p>- giornalisti accreditati con tesserino in corso di validità</p>
+                            <p>- possessori ticket omaggio cartaceo MA*GA</p>
+                            <p>- 1 insegnante ogni 10 alunni</p>
+                            <p>- guide turistiche abilitate</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="disclaimer-prezzi">
+                <p>Acquisto biglietti online su
+                    <a href="https://www.ticketone.it/venue/museo-maga-25931/" target="_blank">TicketOne.it</a>
+                    oppure presso la biglietteria del Museo.
+                    L'accesso senza prenotazione è garantito solo in caso di posti disponibili.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section class="footer">
+        <div class="container">
+            <div class="section1">
+                <img class="svgs" src="img/maga_image.svg" alt="">
+                <p class="p-custom">Fondazione Galleria d'Arte Moderna
+                    <br> e Contemporanea 'Silvio Zanella'
+                </p>
+                <p class="p-custom cont">Via Egidio De Magri 1
+                    <br>21013 Gallarate (VA)
+                    <br>Tel. +39 0331 706011
+                </p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/museomaga/" target="_blank"><img class="i icons"
+                            src="icons/insta.png" alt=""></a>
+                    <a href="https://it-it.facebook.com/maga.museo" target="_blank"><img class="i icons"
+                            src="icons/facebook.png" alt=""></a>
+                    <a href="https://x.com/MuseoMaga" target="_blank"><img class="i icons" src="icons/twitter.png"
+                            alt=""></a>
+                    <a href="https://www.youtube.com/user/MagaMuseo" target="_blank"><img class="i icons"
+                            src="icons/yt.png" alt=""></a>
+                </div>
+            </div>
+            <div class="section2">
+                <p class="p-custom">MA*GA è un museo associato </p>
+                <p class="p-custom amici"><a href="https://www.amaci.org/" target="_blank">AMI.CI</a></p>
+                <a href="https://www.regione.lombardia.it/wps/portal/istituzionale/HP/DettaglioRedazionale/scopri-la-lombardia/cultura-e-tradizione/musei-ed-ecomusei/red-musei-scopril-cult"
+                    target="_blank"><img class="icons lombardia" src="img/lombardia.svg" alt=""></a>
+            </div>
+            <div class="section3">
+                <div class="sect3">
+                    <p class="p-custom"><a href="">Il museo</a></p>
+                    <p class="p-custom"><a href="mostre.html">Le mostre</a></p>
+                    <p class="p-custom"><a href="">Le attività</a></p>
+                    <p class="p-custom"><a href="">Visita</a></p>
+                    <p class="p-custom"><a href="">Calendario</a></p>
+                </div>
+
+            </div>
+            <div class="section4">
+                <div class="sect3">
+                    <p class="p-custom"><a href="">La collezione</a></p>
+                    <p class="p-custom"><a href="">Le pubblicazioni</a></p>
+                    <p class="p-custom"><a href="">Educazione</a></p>
+                    <p class="p-custom"><a href="">Sostieni</a></p>
+                </div>
+            </div>
+            <div class="section5">
+                <div class="sect3">
+                    <p class="p-custom"><a href="">Iscriviti alla Newsletter</a></p>
+                    <p class="p-custom"><a href="">Amministrazione Trasparente</a></p>
+                    <p class="p-custom"><a href="">Informativa Trattamento Dati</a></p>
+                    <p class="p-custom"><a href="">Privacy Policy</a></p>
+                    <p class="p-custom"><a href="">Cookie Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
