@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html info-skill="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,10 +15,10 @@
         <nav class="laptop">
             <a class="home" href="index.html"><img class="svg" src="svg/home.svg" alt=""></a>
             <div class="nav-components">
-                <a href="#private">private life</a>
-                <a href="portfolio.html">portfolio</a>
-                <a href="#hobbies">hobbies</a>
-                <a href="#socials">socials</a>
+                <a href="#">about me</a>
+                <a href="#">skills</a>
+                <a href="#">experience</a>
+                <a href="#">projects</a>
             </div>
         </nav>
     </header>
@@ -37,10 +37,10 @@
 
                 <div class="menu-container" id="menuContainer">
                     <div class="content-menu" id="menuText">
-                        <a href="#private">private life</a>
-                        <a href="">portfolio</a>
-                        <a href="#hobbies">hobbies</a>
-                        <a href="#socials">socials</a>
+                        <a href="#">about me</a>
+                        <a href="#">skills</a>
+                        <a href="#">experience</a>
+                        <a href="#">projects</a>
                     </div>
                 </div>
             </nav>
@@ -53,10 +53,191 @@
                 <div class="img-cont-portfolio">
                     <img src="profile picture.jpg" alt="">
                 </div>
-                <h1 class="title-portfolio">Hi, I'm Vladyslav</h1>
-                <h3 class="subtitle-portfolio">web developer</h3>
+
+                <div class="info">
+                    <h1 class="title-portfolio">Hi, I'm Vladyslav</h1>
+
+                    <h3 class="subtitle-portfolio">web developer</h3>
+                </div>
+            </div>
+
+            <div class="portfolio-containers">
+                <div class="port-cont">
+                    <h1>ITSINCOM</h1>
+                    <p>2 years of web development course</p>
+                </div>
+
+                <div class="port-cont">
+                    <h1>5+</h1>
+                    <p>years of IT competencies already</p>
+                </div>
+
+                <div class="port-cont">
+                    <h1>Frontend</h1>
+                    <p>design is my specialty</p>
+                </div>
             </div>
         </section>
+
+        <section class="skills-sec">
+            <div class="center-cont">
+                <hr class="line">
+                <h1 class="prv-title">Skills</h1>
+                <hr class="line">
+            </div>
+
+            <div class="btns">
+                <div class="button-container btn-show" id="btnDefault">
+                    <div class="btn-a">
+                        <button class="btn" id="dropdown1">
+                            <p id="skillsButtonText1">show</p>
+                            <img class="btn-svg" id="arrowIconDown" src="svg/arrow-down.svg" alt="">
+                            <img class="btn-svg svg-visibility" id="deleteIcon" src="svg/x-close.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="button-container btn-drop" id="btnJavascript">
+                    <div class="btn-a">
+                        <button class="btn" id="dropdown2">
+                            <p id="skillsButtonText2">show</p>
+                            <img class="btn-svg" id="arrowIconDown" src="svg/arrow-down.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="choice" id="choice">
+                        <p id="backendText">backend</p>
+                        <p id="frontendText">frontend</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-impagination">
+                <div class="skills-container" id="backendContent">
+                    <div class="info-skill-cont">
+                        <div class="img-cont">
+                            <img src="svg/java.svg" alt="">
+                        </div>
+                        <div class="info-skill-text">
+                            <h1>Java</h1>
+                            <p>object oriented info-skilluage</p>
+                        </div>
+                    </div>
+
+                    <div class="info-skill-cont">
+                        <div class="img-cont">
+                            <img src="svg/c.svg" alt="">
+                        </div>
+                        <div class="info-skill-text">
+                            <h1>C</h1>
+                            <p>structure based info-skilluage</p>
+                        </div>
+                    </div>
+
+                    <div class="info-skill-cont">
+                        <div class="img-cont">
+                            <img src="svg/py.svg" alt="">
+                        </div>
+                        <div class="info-skill-text">
+                            <h1>Python</h1>
+                            <p>builds websites and softwares</p>
+                        </div>
+                    </div>
+
+                    <div class="info-skill-cont">
+                        <div class="img-cont">
+                            <img src="svg/js.svg" alt="">
+                        </div>
+                        <div class="info-skill-text">
+                            <h1>Javascript</h1>
+                            <p>enhances websites animations</p>
+                        </div>
+                    </div>
+
+                    <div class="info-skill-cont">
+                        <div class="img-cont">
+                            <img src="svg/db.svg" alt="">
+                        </div>
+                        <div class="info-skill-text">
+                            <h1>Sql</h1>
+                            <p>creation of databases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-container" id="frontendContent">
+                    <div class="info-skill-cont">
+                        <div class="img-cont">
+                            <img src="svg/html.svg" alt="">
+                        </div>
+                        <div class="info-skill-text">
+                            <h1>Html</h1>
+                            <p>creation of elements in a website</p>
+                        </div>
+                    </div>
+
+                    <div class="info-skill-cont">
+                        <div class="img-cont">
+                            <img src="svg/css.svg" alt="">
+                        </div>
+                        <div class="info-skill-text">
+                            <h1>CSS</h1>
+                            <p>personalizes a website</p>
+                        </div>
+                    </div>
+
+                    <div class="info-skill-cont">
+                        <div class="img-cont">
+                            <img src="svg/Figma.svg" alt="">
+                        </div>
+                        <div class="info-skill-text">
+                            <h1>Figma</h1>
+                            <p>used for web design</p>
+                        </div>
+                    </div>
+
+                    <div class="info-skill-cont">
+                        <div class="img-cont">
+                            <img src="svg/illustrator.svg" alt="">
+                        </div>
+                        <div class="info-skill-text">
+                            <h1>Ilustrator</h1>
+                            <p>vector images creator</p>
+                        </div>
+                    </div>
+
+                    <div class="info-skill-cont">
+                        <div class="img-cont">
+                            <img src="svg/ps.svg" alt="">
+                        </div>
+                        <div class="info-skill-text">
+                            <h1>Photoshop</h1>
+                            <p>image modifier</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+
     </div>
 
 
