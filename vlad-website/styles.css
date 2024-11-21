@@ -93,6 +93,7 @@ body {
 .btn {
     display: flex;
     gap: 10px;
+    position: relative;
     padding: 1rem 2rem;
     font-size: var(--regular-text-size);
     border-radius: 30px;
@@ -102,6 +103,7 @@ body {
     border: none;
     user-select: none;
     transition: all 0.3s;
+    z-index: 1;
 }
 
 .btn-a {
@@ -388,9 +390,6 @@ body {
 
 
 
-
-
-
 /*! -------------------- Mobile -------------------- !*/
 @media screen and (max-width: 768px) {
     .laptop {
@@ -400,7 +399,9 @@ body {
     .fixed-navbar {
         position: fixed;
         width: 100%;
-        height: 100%;
+        height: auto;
+        z-index: 10;
+        overflow: visible;
     }
 
     .mobile {
@@ -412,7 +413,7 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        z-index: 1;
+        z-index: 10;
         padding: 1rem;
         backdrop-filter: blur(10px);
         background-color: #00000082;
