@@ -518,6 +518,10 @@ body {
         width: 90vw;
     }
 
+    .info-cont .svginfo {
+        width: 16px;
+    }
+
     .info-cont p {
         width: 80vw;
         font-weight: var(--text-weight);
