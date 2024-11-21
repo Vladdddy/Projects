@@ -231,6 +231,81 @@ html {
     }
 }
 
+
+
+
+
+
+
+
+.experience-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--text-color);
+    margin-top: 4rem;
+}
+
+.exp-border {
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+
+.stage,
+.course {
+    padding: 1rem 2rem;
+    border-radius: 54px;
+}
+
+.active {
+    background-color: #7410ff82;
+}
+
+.stage:hover,
+.course:hover {
+    cursor: pointer;
+}
+
+.stage-content {
+    display: flex;
+}
+
+.course-content {
+    display: none;
+}
+
+.stage-content,
+.course-content {
+    color: var(--text-color);
+    font-weight: 300;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exp-title {
+    font-size: var(--title-size);
+    font-weight: 600;
+}
+
+.exp-text-content {
+    width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*? -------------------- Hover -------------------- ?*/
 @media screen and (min-width: 1024px) {
     .choice p:hover {

@@ -77,28 +77,28 @@ function main() {
         deleteIcon.style.display = "flex";
         backendContent.style.display = "none";
         frontendContent.style.display = "flex";
-        dropdown1.style.backgroundColor = "var(--delete-selected)";
+        dropdown1.style.backgroundColor = "var(--primary-color)";
     });
 
-    /* -------------courses------------- */ /*
+    /* -------------courses------------- */
     const stageButton = document.getElementById("stageButton");
     const courseButton = document.getElementById("courseButton");
     const stageText = document.getElementById("stageText");
     const courseText = document.getElementById("courseText");
-    
+
     stageButton.addEventListener("click", () => {
         stageText.style.display = "flex";
         courseText.style.display = "none";
         stageButton.classList.add("active");
         courseButton.classList.remove("active");
     });
-    
+
     courseButton.addEventListener("click", () => {
         stageText.style.display = "none";
         courseText.style.display = "flex";
         stageButton.classList.remove("active");
         courseButton.classList.add("active");
-    }); */
+    });
 }
 
 main();
