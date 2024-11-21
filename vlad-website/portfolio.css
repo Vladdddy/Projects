@@ -231,12 +231,10 @@ html {
     }
 }
 
-
-
-
-
-
-
+/* -------------------- Skills -------------------- */
+.internship-sec {
+    height: auto;
+}
 
 .experience-buttons {
     display: flex;
@@ -257,11 +255,11 @@ html {
 .stage,
 .course {
     padding: 1rem 2rem;
-    border-radius: 54px;
+    border-radius: 50px;
 }
 
 .active {
-    background-color: #7410ff82;
+    background-color: var(--primary-color);
 }
 
 .stage:hover,
@@ -271,10 +269,12 @@ html {
 
 .stage-content {
     display: flex;
+    margin-top: 4rem;
 }
 
 .course-content {
     display: none;
+    margin-top: 4rem;
 }
 
 .stage-content,
@@ -282,7 +282,8 @@ html {
     color: var(--text-color);
     font-weight: 300;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 1rem;
 }
 
 .exp-title {
@@ -291,10 +292,21 @@ html {
 }
 
 .exp-text-content {
-    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
+.exp-text-content p {
+    color: var(--hover-text-color);
+    font-weight: var(--text-weight);
+    width: 30vw;
+}
 
+.exp-grand-container {
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -400,6 +412,84 @@ html {
 
     .info-skill-cont p {
         font-size: var(--text-size);
+    }
+
+    /* -------------------- Skills -------------------- */
+    .internship-sec {
+        height: auto;
+    }
+
+    .experience-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: var(--text-color);
+        margin-top: 4rem;
+    }
+
+    .exp-border {
+        border: 2px solid var(--primary-color);
+        border-radius: 50px;
+        display: flex;
+        flex-direction: row;
+        padding: 4px;
+    }
+
+    .stage,
+    .course {
+        padding: 1rem 2rem;
+        border-radius: 50px;
+    }
+
+    .active {
+        background-color: var(--primary-color);
+    }
+
+    .stage:hover,
+    .course:hover {
+        cursor: pointer;
+    }
+
+    .stage-content {
+        display: flex;
+        margin-top: 4rem;
+    }
+
+    .course-content {
+        display: none;
+        margin-top: 4rem;
+    }
+
+    .stage-content,
+    .course-content {
+        color: var(--text-color);
+        font-weight: 300;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .exp-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .exp-text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .exp-text-content p {
+        color: var(--hover-text-color);
+        font-weight: var(--text-weight);
+        font-size: var(--text-size);
+        width: 90vw;
+    }
+
+    .exp-grand-container {
+        display: flex;
+        justify-content: center;
     }
 
 }
