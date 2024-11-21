@@ -64,7 +64,7 @@ function main() {
         deleteIcon.style.display = "flex";
         backendContent.style.display = "flex";
         frontendContent.style.display = "none";
-        dropdown1.style.backgroundColor = "var(--delete-selected)";
+        dropdown1.style.backgroundColor = "red";
     });
 
     frontendText.addEventListener("click", () => {

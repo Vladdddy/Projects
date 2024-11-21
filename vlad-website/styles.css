@@ -415,8 +415,7 @@ body {
         justify-content: space-between;
         z-index: 10;
         padding: 1rem;
-        backdrop-filter: blur(10px);
-        background-color: #00000082;
+        background-color: black;
     }
 
     #menu {
