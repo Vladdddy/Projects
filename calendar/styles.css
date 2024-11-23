@@ -6,6 +6,51 @@
 
 body {
     background: #ecedef;
+    font-family: 'Lucida Sans';
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    padding: 1rem;
+    background-color: #000000;
+}
+
+.btn-navbar {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        color: #979797;
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    background-color: #4caeff;
+    color: #ffffff;
+    width: 8rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #3c89c8;
+    }
+}
+
+.title {
+    font-weight: bold;
+    font-size: 3rem;
 }
 
 .impagination {
@@ -14,12 +59,45 @@ body {
 }
 
 .card {
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 
 .calendar {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-top: 4rem;
+    gap: 4rem;
+    background: #000000;
+    color: #ffffff;
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #00000083;
+}
+
+.calendar label {
+    font-weight: bold;
+}
+
+.calendar input {
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+}
+
+.calendar-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
+    outline: none;
 }
