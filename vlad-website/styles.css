@@ -139,6 +139,7 @@ body {
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
+    gap: 4rem;
 }
 
 .hero-content a {
@@ -154,7 +155,7 @@ body {
 }
 
 .img-container img {
-    width: 300px;
+    width: 200px;
 }
 
 /* -------------------- Private section -------------------- */
@@ -269,11 +270,7 @@ body {
 
 .info-cont a {
     transition: all 0.3s;
-}
-
-.social-p {
-    font-weight: var(--text-weight);
-    font-size: var(--regular-text-size);
+    text-decoration: none;
     color: var(--text-color);
 }
 
@@ -415,7 +412,7 @@ body {
         justify-content: space-between;
         z-index: 10;
         padding: 1rem;
-        background-color: black;
+        background-color: #0000002c;
     }
 
     #menu {
@@ -439,6 +436,7 @@ body {
         background-color: #00000082;
         overflow: hidden;
         animation: menu 0.3s linear;
+        padding-top: 1rem;
     }
 
     .content-menu {
@@ -453,6 +451,10 @@ body {
         color: var(--text-color);
         font-size: 20px;
         font-weight: var(--text-weight);
+    }
+
+    .line {
+        width: 24vw;
     }
 
     /* -------------------- Hero -------------------- */
@@ -549,17 +551,12 @@ body {
     .gapper {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: 1rem;
-        margin-top: 0;
     }
 
-    .info-cont img {
+    .info-cont svg {
         width: 30px;
-    }
-
-    .social-p {
-        font-size: var(--text-size);
-        font-weight: var(--text-weight);
     }
 
     #hobbies {

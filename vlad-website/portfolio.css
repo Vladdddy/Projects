@@ -168,7 +168,7 @@ html {
     padding: 1rem 2rem;
     font-size: var(--regular-text-size);
     border-radius: 20px;
-    gap: 1rem;
+    gap: 2rem;
     border: none;
     backdrop-filter: blur(12px);
     animation: menuChoice 0.2s ease-out;
@@ -231,7 +231,7 @@ html {
     }
 }
 
-/* -------------------- Skills -------------------- */
+/* -------------------- Internship -------------------- */
 .internship-sec {
     height: auto;
 }
@@ -308,12 +308,72 @@ html {
     justify-content: center;
 }
 
+/* -------------------- Projects -------------------- */
+.projects-sec {
+    height: auto;
+}
 
+.project-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
 
+.project-upper {
+    display: flex;
+    position: relative;
+    padding: 1rem;
+}
 
+.project-display {
+    display: flex;
+    overflow: visible;
+}
 
+.project-display img {
+    width: 200px;
+    filter: brightness(50%);
+    border-radius: 30px;
+    transition: all 0.2s;
+}
 
+.project-display img:hover {
+    filter: brightness(100%);
+    cursor: pointer;
+}
 
+.empty {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border: 2px dotted grey;
+    position: relative;
+}
+
+.is-new {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    padding: 0.5rem 1rem;
+    font-size: var(--text-size);
+    color: var(--text-color);
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.empty-prj {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--hover-text-color);
+    font-weight: var(--text-weight);
+}
 
 
 
@@ -492,4 +552,7 @@ html {
         justify-content: center;
     }
 
+    .is-new {
+        padding: 1rem 2rem;
+    }
 }
