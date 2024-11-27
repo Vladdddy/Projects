@@ -23,6 +23,7 @@ const keyDate = "date";
 const keyText = "text";
 const keyChores = "chores";
 let localCont: number;
+const definedChore = localStorage.getItem(keyChores);
 
 // Creates a chore each time
 function createChores(title: string, date: string, text: string, choresCounter: number) {
@@ -62,19 +63,17 @@ function createChores(title: string, date: string, text: string, choresCounter: 
     newButton.addEventListener("click", () => {
         handleDelete(choresCounter, newChore);
     });
-
-    taskSearcher(title, choresCounter, newContainerTask);
 }
 
 // Removes a specific task
 function handleDelete(choresCounter: number, newChore: HTMLElement) {
     newChore.remove();
     let k = choresCounter;
+    const j = Number(localStorage.getItem(keyChores));
 
     localStorage.removeItem(keyName + k);
     localStorage.removeItem(keyDate + k);
     localStorage.removeItem(keyText + k);
-    localStorage.setItem(keyChores, String(choresCounter - 1));
 
     popupDisplay(feedbackDeleteChore);
 }
@@ -92,29 +91,32 @@ function taskSearcher(title: string, id: number, newContainerTask: HTMLElement) 
 function localStorageCheck() {
     let booleanCheck: boolean;
 
-    if (!localStorage.getItem(keyName + 1)) {
+    if (!localStorage.getItem(keyChores)) {
         localCont = 0;
         booleanCheck = false;
     }
     else {
+        let j: number;
         let k = 0;
         let displayEmpty = "none";
 
-        while (localStorage.getItem(keyName + (k + 1))) {
-            createChores(
-                String(localStorage.getItem(keyName + (k + 1))),
-                String(localStorage.getItem(keyText + (k + 1))),
-                String(localStorage.getItem(keyDate + (k + 1))), k + 1);
-            k++;
-            displayEmpty = "flex";
+        for (j = 1; j <= Number(localStorage.getItem(keyChores)); j++) {
+            if (localStorage.getItem(keyName + (j))) {
+                createChores(
+                    String(localStorage.getItem(keyName + (j))),
+                    String(localStorage.getItem(keyText + (j))),
+                    String(localStorage.getItem(keyDate + (j))), j);
+                k++;
+            }
         }
+
+        displayEmpty = "flex";
+        localStorage.setItem(keyChores, String(definedChore));
+        booleanCheck = true;
 
         if (emptyText) {
             emptyText.style.display = displayEmpty;
         }
-
-        localStorage.setItem(keyChores, String(k));
-        booleanCheck = true;
     }
 
     return booleanCheck;
@@ -171,10 +173,12 @@ deleteBtn?.addEventListener("click", () => {
 searchBtn?.addEventListener("click", () => {
     const input = searchInput.value;
 
-    if (localStorage.getItem(keyName + 1)) {
-        for (let k = 1; k <= Number(localStorage.getItem(keyChores)); k++) {
-            if (localStorage.getItem(keyName + k) === input) {
-                // TO-DO
+    if (localStorage.getItem(keyChores)) {
+        for (let k = 1; k <= Number(definedChore); k++) {
+            if (String(localStorage.getItem(keyName + k) === input)) {
+                choreDisplay.style.display = "flex";
+            } else {
+                choreDisplay.style.display = "none";
             }
         }
 
