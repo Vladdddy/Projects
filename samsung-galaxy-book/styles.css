@@ -25,6 +25,10 @@
     /* Spacing */
     --sec-top-padding: 2rem;
     --sec-padding: 100px;
+    --px64: 64px;
+    --px32: 32px;
+    --px16: 16px;
+    --px8: 8px;
 }
 
 body {
@@ -51,12 +55,12 @@ nav {
 }
 
 .layout-grid {
-    margin: 0 8rem;
+    margin: 0 10vw;
 }
 
 .logo {
     font-family: "Istok Web", serif;
-    font-size: 32px;
+    font-size: var(--px32);
 }
 
 .buy-btn {
@@ -105,7 +109,7 @@ nav {
 }
 
 .box-hero {
-    margin-top: 64px;
+    margin-top: var(--px64);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -115,17 +119,18 @@ nav {
 .text-box {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: var(--px64);
     max-width: 280px;
-    color: var(--grey)
+    color: var(--grey);
+    font-size: var(--text-size);
 }
 
 .wrap-box {
     display: flex;
-    gap: 16px;
+    gap: var(--px32);
 
     & .icon {
-        width: 32px;
+        width: var(--px32);
     }
 }
 
@@ -133,8 +138,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 32px;
-    margin-top: 16px;
+    gap: var(--px32);
+    margin-top: var(--px32);
 }
 
 .button-primary, .button-varient {
@@ -191,13 +196,13 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 64px;
+    gap: var(--px64);
 }
 
 .paragraphs {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: var(--px32);
     max-width: 580px;
 }
 
@@ -216,7 +221,7 @@ nav {
 
 .specs {
     max-width: 400px;
-    gap: 16px;
+    gap: var(--px32);
 
     & .icon {
         width: 24px;
@@ -224,7 +229,7 @@ nav {
 }
 
 .specs-button {
-    margin-top: 64px;
+    margin-top: var(--px64);
 }
 
 /* ------------------------------- Processor -------------------------------*/
@@ -237,14 +242,14 @@ nav {
 }
 
 .prcs-box {
-    gap: 8px;
+    gap: var(--px8);
     max-width: 380px;
 }
 
 .prcs-text-box {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: var(--px64);
 }
 
 /* ------------------------------- Compact -------------------------------*/
@@ -260,8 +265,8 @@ nav {
     align-items: center;
 
     & .compact-content {
-        margin-top: 64px;
-        gap: 64px;
+        margin-top: var(--px64);
+        gap: var(--px64);
     }
 }
 
@@ -307,17 +312,17 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 64px;
+    margin-top: var(--px64);
 }
 
 .index-box {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: var(--px8);
     padding: 8px;
     overflow: hidden;
-    margin-top: 16px;
+    margin-top: var(--px32);
 }
 
 .dot,
@@ -378,11 +383,11 @@ nav {
 .box-footer {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: var(--px32);
 }
 
 .pre-foot-par {
-    gap: 16px;
+    gap: var(--px32);
 }
 
 /* ------------------------------- Footer -------------------------------*/
@@ -407,4 +412,26 @@ nav {
 
 .icon-footer {
     width: 16px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    :root {
+        /* Font Size */
+        --text-size: 12px;
+        --title-size: 24px;
+    
+        /* Spacing */
+        --sec-top-padding: 2rem;
+        --sec-padding: 100px;
+        --px64: 32px;
+        --px32: 16px;
+        --px16: 8px;
+        --px8: 4px;
+    }
 }
