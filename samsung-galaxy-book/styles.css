@@ -23,12 +23,11 @@
 
     /* Spacing */
     --sec-top-padding: 2rem;
-    --sec-padding: 4rem;
+    --sec-padding: 100px;
 }
 
 body {
     font-family: "Inter", serif;
-    height: 200vh;
     font-size: 16px;
 }
 
@@ -87,6 +86,10 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    & p {
+        text-align: center;
+    }
 }
 
 .title {
@@ -95,7 +98,127 @@ nav {
 }
 
 .sub-text {
-    text-align: center;
     font-size: var(--text-size);
     color: var(--grey);
+}
+
+.box-hero {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    max-width: 280px;
+    color: var(--grey)
+}
+
+.wrap-box {
+    display: flex;
+    gap: 16px;
+
+    & .icon {
+        width: 32px;
+    }
+}
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 16px;
+}
+
+.button-primary, .button-varient {
+    background-color: var(--button-color);
+    color: #ffffff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 30px;
+    height: 48px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: var(--text-size);
+
+    &.button-primary:hover {
+        background: var(--button-hover);
+    }
+}
+
+.button-varient {
+    background-color: #ffffff;
+    color: var(--button-color);
+    border: 2px solid var(--button-color);
+
+    &.button-varient:hover {
+        background: var(--button-hover);
+        color: #ffffff;
+        border: 2px solid var(--button-hover);
+    }
+}
+
+.description-section {
+    margin-top: var(--sec-padding);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desc-content {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.desc-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 64px;
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 580px;
+}
+
+.specs-section {
+    margin-top: var(--sec-padding);
+    height: 100vh;
+}
+
+.specs-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.specs {
+    max-width: 400px;
+    gap: 16px;
+
+    & .icon {
+        width: 24px;
+    }
+}
+
+.specs-button {
+    margin-top: 64px;
 }
