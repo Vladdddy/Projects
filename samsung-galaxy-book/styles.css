@@ -220,7 +220,7 @@ nav {
 }
 
 .specs {
-    max-width: 400px;
+    max-width: 500px;
     gap: var(--px32);
 
     & .icon {
