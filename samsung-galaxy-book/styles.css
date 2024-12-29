@@ -16,6 +16,7 @@
     --button-hover: #1168A2;
     --rating-color: #ffe100;
     --empty-rating: #DFDFDF;
+    --footer: #f2f2f2;
 
     /* Font Size */
     --text-size: 16px;
@@ -284,7 +285,22 @@ nav {
 
 .carousel {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 850px;
+    height: 500px;
+    aspect-ratio: 16 / 9;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .buy-button {
@@ -294,31 +310,38 @@ nav {
     margin-top: 64px;
 }
 
-.image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .index-box {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 8px;
+    padding: 8px;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.dot,
+.full-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.2s ease;
 }
 
 .full-dot {
-    width: 8px;
-    height: 8px;
     background-color: var(--button-color);
-    border-radius: 50%;
+    transform: scale(0.6);
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
     background-color: var(--empty-rating);
-    border-radius: 50%;
+    transform: scale(1);
+}
+
+.image img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
 }
 
 #img1 {
@@ -335,4 +358,53 @@ nav {
 
 #img4 {
     display: none;
+}
+
+/* ------------------------------- Prefooter -------------------------------*/
+.pre-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & a {
+        text-decoration: none;
+    }
+
+    & .logo {
+        color: var(--black);
+    }
+}
+
+.box-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.pre-foot-par {
+    gap: 16px;
+}
+
+/* ------------------------------- Footer -------------------------------*/
+.footer {
+    margin-top: var(--sec-padding);
+    background-color: var(--footer);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--text-size);
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: var(--grey);
+}
+
+.icon-footer {
+    width: 16px;
 }
