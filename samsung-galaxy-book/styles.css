@@ -78,6 +78,7 @@ nav {
     width: 24px;
 }
 
+/* ------------------------------- Hero -------------------------------*/
 .hero {
     margin-top: var(--sec-top-padding);
 }
@@ -169,6 +170,7 @@ nav {
     }
 }
 
+/* ------------------------------- Description -------------------------------*/
 .description-section {
     margin-top: var(--sec-padding);
     height: 100vh;
@@ -198,6 +200,7 @@ nav {
     max-width: 580px;
 }
 
+/* ------------------------------- Specs -------------------------------*/
 .specs-section {
     margin-top: var(--sec-padding);
     height: 100vh;
@@ -221,4 +224,99 @@ nav {
 
 .specs-button {
     margin-top: 64px;
+}
+
+/* ------------------------------- Processor -------------------------------*/
+.processor-section {
+    margin-top: var(--sec-padding);
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.prcs-box {
+    gap: 8px;
+    max-width: 380px;
+}
+
+.prcs-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+/* ------------------------------- Processor -------------------------------*/
+.compact-section {
+    margin-top: var(--sec-padding);
+    height: 100vh;
+}
+
+.compact-box, .compact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .compact-content {
+        margin-top: 64px;
+        gap: 64px;
+    }
+}
+
+
+.carousel-section {
+    margin-top: var(--sec-padding);
+    height: 100vh;
+}
+
+.carousel-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & h1 {
+        max-width: 450px;
+        text-align: start;
+    }
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+}
+
+.buy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.full-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--button-color);
+    border-radius: 50%;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--empty-rating);
+    border-radius: 50%;
 }
