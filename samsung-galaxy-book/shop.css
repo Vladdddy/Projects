@@ -1,0 +1,157 @@
+:root {
+  /* Colors */
+  --black: #000000;
+  --grey: #494949;
+  --button-color: #25a8ff;
+  --button-hover: #1168a2;
+  --blue-transparent: #25a8ff20;
+  --green: #3dd600;
+  --green-transparent: #3dd60020;
+  --rating-color: #ffe100;
+  --empty-rating: #dfdfdf;
+  --footer: #f2f2f2;
+
+  /* Font Size */
+  --text-size: 16px;
+  --small-title: 24px;
+  --title-size: 56px;
+
+  /* Spacing */
+  --sec-top-padding: 2rem;
+  --sec-padding: 100px;
+  --px64: 64px;
+  --px32: 32px;
+  --px16: 16px;
+  --px8: 8px;
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: var(--px8);
+  margin-top: var(--px16);
+  font-size: var(--text-size);
+
+  & a {
+    color: var(--grey);
+
+    &.selected {
+      color: var(--button-color);
+    }
+  }
+}
+
+.shop-section {
+  margin-top: var(--px64);
+}
+
+.shop-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.small-title {
+  font-size: var(--small-title);
+}
+
+.laptop-selection {
+  display: flex;
+  align-items: center;
+  gap: var(--px32);
+
+  & .book-variants {
+    display: flex;
+
+    & a {
+      padding: 10px;
+      color: var(--black);
+      border-radius: 8px;
+
+      &.selected-book {
+        color: var(--button-color);
+        background-color: var(--blue-transparent);
+      }
+    }
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--px32);
+}
+
+.desc-box-shop {
+  font-size: var(--text-size);
+  display: flex;
+  flex-direction: column;
+  gap: var(--px8);
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  color: var(--rating-color);
+
+  & svg {
+    fill: #ffe100;
+  }
+
+  & .empty {
+    fill: var(--empty-rating);
+    color: var(--empty-rating);
+  }
+}
+
+.desc-text {
+  width: 380px;
+}
+
+.delivery {
+  display: flex;
+  flex-direction: row;
+  gap: var(--px8);
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 232px;
+  height: 32px;
+  font-size: var(--text-size);
+  background-color: var(--green-transparent);
+  color: var(--green);
+}
+
+.delivery-estimation {
+  margin-top: var(--px8);
+  color: var(--black);
+}
+
+.button-collection {
+  display: flex;
+  gap: var(--px32);
+
+  & .button-primary {
+    width: 272px;
+  }
+}
+
+.quantity-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: var(--text-size);
+  background-color: #ffffff;
+  border: 2px solid var(--black);
+  border-radius: 24px;
+  width: 80px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.disclaimer {
+  margin-top: var(--px64);
+  text-align: center;
+  padding: 10px;
+}
