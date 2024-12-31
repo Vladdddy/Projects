@@ -58,6 +58,7 @@
 .laptop-selection {
   display: flex;
   align-items: center;
+  font-size: var(--text-size);
   gap: var(--px32);
 
   & .book-variants {
@@ -79,6 +80,7 @@
 .description {
   display: flex;
   flex-direction: column;
+  font-size: var(--text-size);
   gap: var(--px32);
 }
 
@@ -107,6 +109,7 @@
 
 .desc-text {
   width: 380px;
+  font-size: var(--text-size);
 }
 
 .delivery {
@@ -126,6 +129,7 @@
 .delivery-estimation {
   margin-top: var(--px8);
   color: var(--black);
+  font-size: var(--text-size);
 }
 
 .button-collection {
@@ -152,6 +156,30 @@
 
 .disclaimer {
   margin-top: var(--px64);
+  font-size: var(--text-size);
   text-align: center;
   padding: 10px;
+}
+
+/* ------------------------------- Mobile -------------------------------*/
+@media screen and (max-width: 767px) {
+  :root {
+    /* Font Size */
+    --text-size: 12px;
+    --small-title: 24px;
+    --title-size: 24px;
+
+    /* Spacing */
+    --sec-top-padding: 2rem;
+    --sec-padding: 100px;
+    --px64: 32px;
+    --px32: 16px;
+    --px16: 8px;
+    --px8: 4px;
+    --gap: 50px;
+  }
+
+  body {
+    font-size: 8px;
+  }
 }
