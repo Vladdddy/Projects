@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showImage(currentIndex);
     }
 
-    setInterval(nextImage, 2000);
+    setInterval(nextImage, 3000);
     showImage(currentIndex);
 });
 
