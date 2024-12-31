@@ -31,9 +31,34 @@
     --px8: 8px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--empty-rating);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--button-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--button-hover);
+}
+
 body {
     font-family: "Inter", serif;
     font-size: 16px;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav {
@@ -42,11 +67,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    font-size: var(text);
+    font-size: var(--text-size);
 
     & a {
         text-decoration: none;
         color: var(--black);
+        font-size: var(--text-size);
     }
 
     & :hover {
@@ -433,6 +459,14 @@ nav {
         --px32: 16px;
         --px16: 8px;
         --px8: 4px;
+    }
+
+    body {
+        font-size: 8px;
+    }
+
+    .logo {
+        font-size: 24px;
     }
 }
 
