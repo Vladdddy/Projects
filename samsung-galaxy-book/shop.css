@@ -211,6 +211,11 @@
   font-size: var(--text-size);
 }
 
+.delivery-fee {
+  background-color: var(--blue-transparent);
+  color: var(--button-color);
+}
+
 .button-collection {
   display: flex;
   align-items: center;
