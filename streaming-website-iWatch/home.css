@@ -1,0 +1,184 @@
+.hero {
+    height: 100vh;
+    position: relative;
+
+    & .hero-image {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(30%);
+        z-index: -1;
+    }
+
+    & .hero-content {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 4rem;
+        height: 60vh;
+        margin-top: 12rem;
+
+        & .left-nav {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 1rem;
+
+            & svg {
+                width: 24px;
+                color: #ffffff;
+                cursor: pointer;
+                transition: 0.3s all;
+                margin: 1rem;
+
+                &:hover {
+                    color: var(--primary);
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        & .right-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 4rem;
+            margin-left: 8rem;
+            overflow-y: visible;
+
+            & .searchbar {
+                display: none;
+                position: relative;
+                & input {
+                    padding: 1rem 1rem 1rem 2.5rem;
+                    width: 30vw;
+                    border: 2px solid var(--primary);
+                    border-radius: 4rem;
+                    background: var(--primary-hover);
+                    color: var(--primary);
+                    font-size: var(--text);
+                    outline: none;
+                }
+
+                & svg {
+                    position: absolute;
+                    width: 16px;
+                    color: var(--primary);
+                    transform: translateX(-29vw);
+                }
+            }
+
+            & .film-section {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                & h1 {
+                    color: #ffffff;
+                    font-weight: 700;
+                    font-size: var(--subtitle);
+                    user-select: none;
+                }
+            }
+
+            & .film-row {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+
+                & .film {
+                    width: 20vw;
+                    height: 20vh;
+                    border-radius: 1rem;
+                    overflow: hidden;
+
+                    & img {
+                        width: 20vw;
+                        height: 20vh;
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 1rem;
+                        transition: 0.3s all;
+                        cursor: pointer;
+                    }
+
+                    &:hover {
+                        & img {
+                            filter: brightness(50%);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero {
+        & .hero-content {
+            height: 70vh;
+            margin-top: 20vh;
+
+            & .left-nav {
+                flex-direction: row;
+                transform: translateY(-8vh);
+
+                & svg {
+                    &:hover {
+                        color: #ffffff;
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            & .right-content {
+                margin-left: 2rem;
+                margin-top: 4rem;
+                overflow-x: visible;
+                scroll-behavior: smooth;
+                scroll-snap-type: mandatory;
+
+                & .searchbar {
+                    position: relative;
+                    & input {
+                        padding: 1rem 1rem 1rem 5rem;
+                        width: 70vw;
+                        height: 5rem;
+                        outline: none;
+                    }
+
+                    & svg {
+                        position: absolute;
+                        width: 16px;
+                        color: var(--primary);
+                        transform: translateX(-66vw);
+                    }
+                }
+
+                & .film-row {
+                    & .film {
+                        width: 80vw;
+                        height: 20vh;
+
+                        & img {
+                            width: 80vw;
+                            height: 20vh;
+                        }
+
+                        &:hover {
+                            & img {
+                                filter: brightness(100%);
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

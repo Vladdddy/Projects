@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    /* Colors */
+    --primary: #3bfff5;
+    --primary-hover: #3bfff520;
+
+    /* Font Size */
+    --big-text: 50px;
+    --title: 32px;
+    --subtitle: 20px;
+    --text: 16px;
+    --small-text: 12px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-hover);
+    border-radius: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    height: 100vh;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.laptop-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    justify-content: start;
+    gap: 8rem;
+    align-items: center;
+    width: 100vw;
+    margin: 2rem;
+    z-index: 10;
+
+    & .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+
+        & img {
+            width: 3rem;
+        }
+
+        & p {
+            display: flex;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: var(--title);
+        }
+
+        & .highlight {
+            color: var(--primary);
+        }
+    }
+
+    & a {
+        text-decoration: none;
+    }
+
+    & .elements {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+
+        & p {
+            color: #ffffff;
+            font-weight: 500;
+            padding: 1rem 0;
+            border-bottom: 2px solid transparent;
+            transition: 0.3s all;
+            font-size: var(--text);
+
+            &:hover {
+                color: var(--primary);
+                border-bottom: 2px solid var(--primary);
+            }
+        }
+    }
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+    color: #ffffff;
+    font-size: var(--text);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #ffffff;
+    transition: 0.3s all;
+    cursor: pointer;
+
+    & svg {
+        color: #ffffff;
+        width: 20px;
+        transition: 0.3s all;
+    }
+
+    & p {
+        transition: 0.3s all;
+    }
+
+    &:hover {
+        border: 2px solid var(--primary-hover);
+        background-color: var(--primary-hover);
+        & svg {
+            color: var(--primary);
+        }
+
+        & p {
+            color: var(--primary);
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    :root {
+        /* Font-sizes */
+        --big-text: 30px;
+        --title: 24px;
+        --subtitle: 16px;
+        --text: 12px;
+        --small-text: 8px;
+    }
+
+    html {
+        font-size: 8px;
+    }
+
+    body {
+        background: #000000;
+    }
+
+    .laptop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        width: 100vw;
+        padding: 2rem;
+        z-index: 10;
+
+        & a {
+            text-decoration: none;
+        }
+
+        & .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5rem;
+
+            & img {
+                width: 4rem;
+            }
+
+            & p {
+                display: flex;
+                color: #ffffff;
+                font-weight: 700;
+                font-size: var(--title);
+            }
+
+            & .highlight {
+                color: var(--primary);
+            }
+        }
+    }
+
+    .button {
+        padding: 2rem;
+
+        &:hover {
+            border: 2px solid #ffffff;
+            background-color: transparent;
+            & svg {
+                color: #ffffff;
+            }
+
+            & p {
+                color: #ffffff;
+            }
+        }
+    }
+}

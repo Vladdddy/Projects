@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="home.css" />
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+        <title>iWatch</title>
+    </head>
+    <body>
+        <header>
+            <nav class="laptop-nav">
+                <a href="home.html">
+                    <div class="logo">
+                        <img src="logo.png" alt="" />
+                        <p>i <span class="highlight">Watch</span></p>
+                    </div>
+                </a>
+
+                <div class="elements">
+                    <a href=""><p>Home</p></a>
+                    <a href=""><p>Movies</p></a>
+                    <a href=""><p>TV</p></a>
+                    <a href=""><p>Sports</p></a>
+                    <a href=""><p>Live TV</p></a>
+                    <a href=""><p>Genres</p></a>
+                </div>
+
+                <a href="plans.html">
+                    <button class="button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width=""
+                            height=""
+                            color="#000000"
+                            fill="none"
+                        >
+                            <path
+                                d="M14 18C18.4183 18 22 14.4183 22 10C22 5.58172 18.4183 2 14 2C9.58172 2 6 5.58172 6 10C6 14.4183 9.58172 18 14 18Z"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                            />
+                            <path
+                                d="M13.1669 20.9689C12.063 21.6239 10.7742 22 9.3975 22C5.31197 22 2 18.688 2 14.6025C2 13.2258 2.37607 11.937 3.03107 10.8331"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                        <p>Subscriptions</p>
+                    </button>
+                </a>
+            </nav>
+        </header>
+
+        <header>
+            <nav class="mobile-nav">
+                <a href="home.html">
+                    <div class="logo">
+                        <img src="logo.png" alt="" />
+                        <p>i <span class="highlight">Watch</span></p>
+                    </div>
+                </a>
+
+                <div class="hamburger-menu">
+                    <a href="plans.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="32"
+                            height="32"
+                            color="#ffffff"
+                            fill="none"
+                        >
+                            <path
+                                d="M20 12L10 12"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M20 5L4 5"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M20 19L4 19"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <img class="hero-image" src="hero-zone.jpg" alt="" />
+
+            <div class="hero-content">
+                <div class="left-nav">
+                    <div class="left-nav-element">
+                        <svg
+                            id="search"
+                            onclick="search()"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width=""
+                            height=""
+                            color="#000000"
+                            fill="none"
+                        >
+                            <path
+                                d="M14 14L16.5 16.5"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M16.4333 18.5252C15.8556 17.9475 15.8556 17.0109 16.4333 16.4333C17.0109 15.8556 17.9475 15.8556 18.5252 16.4333L21.5667 19.4748C22.1444 20.0525 22.1444 20.9891 21.5667 21.5667C20.9891 22.1444 20.0525 22.1444 19.4748 21.5667L16.4333 18.5252Z"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                            />
+                            <path
+                                d="M16 9C16 5.13401 12.866 2 9 2C5.13401 2 2 5.13401 2 9C2 12.866 5.13401 16 9 16C12.866 16 16 12.866 16 9Z"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+                    <div class="left-nav-element">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width=""
+                            height=""
+                            color="#000000"
+                            fill="none"
+                        >
+                            <path
+                                d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                            />
+                        </svg>
+                    </div>
+                    <div class="left-nav-element">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width=""
+                            height=""
+                            color="#000000"
+                            fill="none"
+                        >
+                            <path
+                                d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                            />
+                            <path
+                                d="M21.011 14.0965C21.5329 13.9558 21.7939 13.8854 21.8969 13.7508C22 13.6163 22 13.3998 22 12.9669V11.0332C22 10.6003 22 10.3838 21.8969 10.2493C21.7938 10.1147 21.5329 10.0443 21.011 9.90358C19.0606 9.37759 17.8399 7.33851 18.3433 5.40087C18.4817 4.86799 18.5509 4.60156 18.4848 4.44529C18.4187 4.28902 18.2291 4.18134 17.8497 3.96596L16.125 2.98673C15.7528 2.77539 15.5667 2.66972 15.3997 2.69222C15.2326 2.71472 15.0442 2.90273 14.6672 3.27873C13.208 4.73448 10.7936 4.73442 9.33434 3.27864C8.95743 2.90263 8.76898 2.71463 8.60193 2.69212C8.43489 2.66962 8.24877 2.77529 7.87653 2.98663L6.15184 3.96587C5.77253 4.18123 5.58287 4.28891 5.51678 4.44515C5.45068 4.6014 5.51987 4.86787 5.65825 5.4008C6.16137 7.3385 4.93972 9.37763 2.98902 9.9036C2.46712 10.0443 2.20617 10.1147 2.10308 10.2492C2 10.3838 2 10.6003 2 11.0332V12.9669C2 13.3998 2 13.6163 2.10308 13.7508C2.20615 13.8854 2.46711 13.9558 2.98902 14.0965C4.9394 14.6225 6.16008 16.6616 5.65672 18.5992C5.51829 19.1321 5.44907 19.3985 5.51516 19.5548C5.58126 19.7111 5.77092 19.8188 6.15025 20.0341L7.87495 21.0134C8.24721 21.2247 8.43334 21.3304 8.6004 21.3079C8.76746 21.2854 8.95588 21.0973 9.33271 20.7213C10.7927 19.2644 13.2088 19.2643 14.6689 20.7212C15.0457 21.0973 15.2341 21.2853 15.4012 21.3078C15.5682 21.3303 15.7544 21.2246 16.1266 21.0133L17.8513 20.034C18.2307 19.8187 18.4204 19.711 18.4864 19.5547C18.5525 19.3984 18.4833 19.132 18.3448 18.5991C17.8412 16.6616 19.0609 14.6226 21.011 14.0965Z"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="right-content">
+                    <div class="searchbar" id="content">
+                        <input type="search" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width=""
+                            height=""
+                            color=""
+                            fill="none"
+                        >
+                            <path
+                                d="M17.5 17.5L22 22"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+
+                    <div class="film-section">
+                        <h1>Films carefully selected for you</h1>
+
+                        <div class="film-row">
+                            <a href="film.html">
+                                <div class="film">
+                                    <img
+                                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsB00jiOUvqn3eag6XZaiti4MminEwPj3idCOldCH0aS4aSIXfwY3vVYniTU8ywObZXRcMCORaiQsJlTwSTa5JzPweu-bLYbfb3C3pBeYo3vLmlbm-kK2-XDmQUyMuVYFPoEKX1ttO/w1200-h630-p-k-no-nu/maxresdefault.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                            </a>
+
+                            <div class="film">
+                                <img
+                                    src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/08/the-boys-season-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="film">
+                                <img
+                                    src="https://m.economictimes.com/thumb/msid-105365790,width-1600,height-900,resizemode-4,imgsize-121028/deadpool-3-cast-release-date-trailer-wolverine-role-what-we-know-so-far.jpg"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="film">
+                                <img
+                                    src="https://keithandthemovies.com/wp-content/uploads/2014/01/prisoners-poster.jpg?w=1200"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="film-section">
+                        <h1>Best TV Series to Watch</h1>
+
+                        <div class="film-row">
+                            <div class="film">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRWJPNM2flgZ0juFUr_n027qmSZLV9S3URlasnY0iPLHNwVtWnwJYT0G7zbmfsaLoj3-c&usqp=CAU"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="film">
+                                <img
+                                    src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/62804b18669443.562cd567cbcd8.jpg"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="film">
+                                <img
+                                    src="https://files.idyllic.app/files/static/3112140"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="film">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCx7hJffVNVzORLViEIHGn5CaZN8ARPfpIA&s"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="film-section">
+                        <h1>Horror Winning Awards</h1>
+
+                        <div class="film-row">
+                            <div class="film">
+                                <img
+                                    src="https://m.media-amazon.com/images/S/pv-target-images/4393f2b7af912f00a7a3e31d2d52d97d9ceb39a1c3c6d4ef75557e554020d6cd._SX1080_FMjpg_.jpg"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="film">
+                                <img
+                                    src="https://static.euronews.com/articles/stories/08/79/72/58/1200x675_cmsv2_6e490f97-6b8a-57e0-8284-916057bf3428-8797258.jpg"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="film">
+                                <img
+                                    src="https://i0.wp.com/thehorrorsyndicate.com/wp-content/uploads/2019/10/in-mouth-of-madness-horizontal-poster.jpg?fit=1280%2C720"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="film">
+                                <img
+                                    src="https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
